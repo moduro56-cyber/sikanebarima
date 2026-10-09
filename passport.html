@@ -3,404 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Passport application documentation assistance from SIKA NE BARIMA LEGAL CHAMBER in Berekum, Ghana.">
     <title>Passport Assistance | SIKA NE BARIMA LEGAL CHAMBER</title>
-    <meta name="description" content="Passport application documentation assistance, requirements, processing options and prices from SIKA NE BARIMA LEGAL CHAMBER in Berekum, Ghana.">
+
     <style>
-        :root {
-            --navy: #071A2B;
-            --navy-light: #102A43;
-            --burgundy: #6E1F32;
-            --gold: #C9A227;
-            --gold-light: #F6E7A8;
-            --white: #FFFFFF;
-            --cream: #F8F5EE;
-            --text: #263238;
-            --muted: #667085;
-        }
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 90px;
-        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: var(--cream);
-            color: var(--text);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #faf7f2;
+            color: #302126;
             line-height: 1.7;
         }
+
         header {
-            background: linear-gradient(
-                135deg,
-                var(--navy),
-                var(--navy-light),
-                var(--burgundy)
-            );
-            color: var(--white);
-            padding: 25px 18px 35px;
+            background: #451521;
+            color: white;
+            padding: 24px 20px;
             text-align: center;
-            border-bottom: 4px solid var(--gold);
+            border-bottom: 4px solid #d4af37;
         }
-        .logo {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 75px;
-            height: 75px;
-            border: 2px solid var(--gold);
-            border-radius: 18px;
-            color: var(--gold-light);
-            font-size: 27px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            box-shadow: 0 8px 20px #0005;
-            margin-bottom: 12px;
-        }
+
         header h1 {
-            font-size: clamp(23px, 4vw, 34px);
-            line-height: 1.3;
-            margin-bottom: 8px;
+            margin: 0;
+            font-size: 26px;
         }
+
         header p {
-            color: var(--gold-light);
-            font-size: 14px;
+            margin: 6px 0 0;
+            color: #ead9bd;
         }
+
         nav {
-            background: var(--navy);
-            padding: 13px 10px;
             text-align: center;
+            padding: 15px;
+            background: #fff;
         }
+
         nav a {
-            display: inline-block;
-            color: var(--white);
+            color: #451521;
             text-decoration: none;
-            font-size: 14px;
             font-weight: bold;
-            margin: 5px 10px;
         }
-        nav a:hover {
-            color: var(--gold-light);
-        }
+
         main {
-            width: min(100% - 30px, 1000px);
-            margin: 30px auto 50px;
+            max-width: 850px;
+            margin: 35px auto;
+            padding: 0 20px;
         }
-        .hero {
-            background: linear-gradient(
-                135deg,
-                var(--navy),
-                var(--navy-light)
-            );
-            color: var(--white);
-            border-radius: 18px;
-            padding: 35px 24px;
-            text-align: center;
-            box-shadow: 0 12px 30px #071A2B20;
-            border-bottom: 4px solid var(--gold);
-        }
-        .hero h2 {
-            color: var(--gold-light);
-            font-size: clamp(25px, 4vw, 36px);
-            margin-bottom: 12px;
-        }
-        .hero p {
-            max-width: 680px;
-            margin: 0 auto 18px;
-        }
-        .section-card {
-            background: var(--white);
-            margin-top: 25px;
+
+        .service-card {
+            background: white;
+            border: 1px solid #e3d6c5;
+            border-radius: 14px;
             padding: 28px;
-            border-radius: 16px;
-            box-shadow: 0 6px 22px #071A2B10;
-            border: 1px solid #E5E7EB;
+            box-shadow: 0 8px 24px rgba(45, 20, 25, 0.08);
         }
-        h2.section-title {
-            color: var(--navy);
-            font-size: clamp(23px, 3vw, 30px);
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--gold);
+
+        h2 {
+            color: #451521;
         }
+
         h3 {
-            color: var(--burgundy);
-            margin: 20px 0 10px;
+            color: #8b681b;
+            margin-top: 25px;
         }
-        p {
-            margin-bottom: 13px;
-        }
-        ul {
-            padding-left: 23px;
-            margin: 12px 0 20px;
-        }
-        li {
-            margin-bottom: 9px;
-        }
+
         .notice {
-            background: #FFF8E5;
-            border-left: 5px solid var(--gold);
-            padding: 16px;
-            border-radius: 8px;
-            margin: 20px 0;
-            font-size: 14px;
+            background: #fbf4df;
+            border-left: 4px solid #d4af37;
+            padding: 14px;
+            border-radius: 5px;
         }
-        .button-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 20px;
-        }
-        .button {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 13px 20px;
-            border-radius: 9px;
+
+        .gold-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 22px;
+            background: #d4af37;
+            color: #351019;
             text-decoration: none;
             font-weight: bold;
-            border: 2px solid transparent;
-            transition: transform 0.2s, box-shadow 0.2s;
+            border-radius: 7px;
         }
-        .button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 7px 15px #0002;
+
+        .gold-button:hover {
+            background: #bd9828;
         }
-        .button-gold {
-            background: var(--gold);
-            color: var(--navy);
-            border-color: var(--gold);
-        }
-        .button-burgundy {
-            background: var(--burgundy);
-            color: var(--white);
-            border-color: var(--burgundy);
-        }
-        .button-outline {
-            background: transparent;
-            color: var(--navy);
-            border-color: var(--gold);
-        }
-        .price-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 16px;
-            margin: 20px 0;
-        }
-        .price-card {
-            background: linear-gradient(145deg, #FFFFFF, #F8F5EE);
-            border: 1px solid #E7D8A6;
-            border-top: 4px solid var(--gold);
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 5px 14px #071A2B0D;
-        }
-        .price-card h3 {
-            margin: 0 0 8px;
-            color: var(--navy);
-            font-size: 17px;
-        }
-        .price {
-            font-size: 25px;
-            font-weight: 900;
-            color: var(--burgundy);
-        }
-        .price-card p {
-            color: var(--muted);
-            font-size: 13px;
-            margin: 5px 0 0;
-        }
-        .price-note {
-            font-size: 14px;
-            color: var(--muted);
-        }
-        .center {
-            text-align: center;
-        }
+
         footer {
-            background: var(--navy);
-            color: var(--white);
+            margin-top: 45px;
+            padding: 22px;
+            background: #451521;
+            color: white;
             text-align: center;
-            padding: 28px 18px;
-            border-top: 4px solid var(--gold);
         }
-        footer p {
-            margin-bottom: 7px;
-        }
+
         footer a {
-            color: var(--gold-light);
-            text-decoration: none;
-        }
-        @media (max-width: 600px) {
-            main {
-                width: min(100% - 20px, 1000px);
-                margin-top: 18px;
-            }
-            .section-card {
-                padding: 20px 17px;
-            }
-            .price-grid {
-                grid-template-columns: 1fr;
-            }
-            .button-row {
-                flex-direction: column;
-            }
-            .button {
-                width: 100%;
-            }
-            nav a {
-                margin: 5px 7px;
-            }
+            color: #f1d782;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <div class="logo">SNB</div>
         <h1>SIKA NE BARIMA LEGAL CHAMBER</h1>
         <p>Professional Documentation &amp; Application Assistance</p>
-        <p>Berekum, Ghana | Nationwide Service</p>
     </header>
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="index.html#services">Services</a>
-        <a href="#requirements">Requirements</a>
-        <a href="#passport-prices">Passport Prices</a>
-        <a href="#contact">Contact</a>
+
+    <nav>
+        <a href="index.html">← Back to Home</a>
     </nav>
+
     <main>
-        <section class="hero">
-            <h2>Passport Assistance</h2>
+        <section class="service-card">
+            <h2>Passport Application Assistance</h2>
+
             <p>
-                Get guidance with passport application documentation,
-                understand the requirements, and review the available
-                processing options before making a decision.
+                Need help preparing your passport application?
+                SIKA NE BARIMA LEGAL CHAMBER provides documentation
+                assistance and guidance through the application process.
             </p>
-            <div class="button-row" style="justify-content:center;">
-                <a class="button button-gold"
-                   href="https://wa.me/233544086681?text=Hello%2C%20I%20need%20passport%20application%20assistance%20from%20SIKA%20NE%20BARIMA%20LEGAL%20CHAMBER.">
-                    Request Passport Assistance
-                </a>
-                <a class="button button-outline"
-                   href="#passport-prices"
-                   style="color:#FFFFFF;">
-                    Check Passport Prices
-                </a>
-            </div>
-        </section>
-        <section class="section-card" id="requirements">
-            <h2 class="section-title">Passport Requirements</h2>
+
+            <h3>Passport Requirements</h3>
+
             <p>
-                Requirements depend on whether you are applying for a
-                first passport, renewing a passport, or replacing a lost
-                or damaged passport.
+                Requirements can depend on whether you are applying
+                for a first passport, renewing a passport, or replacing
+                a lost or damaged passport.
             </p>
+
             <ul>
                 <li>Identify the correct passport application category.</li>
                 <li>Check the current official document checklist.</li>
                 <li>Prepare the supporting information and documents requested.</li>
                 <li>Follow the official application and appointment instructions.</li>
             </ul>
+
             <div class="notice">
                 <strong>Important:</strong> Confirm the latest requirements,
-                official fees, appointment procedures and processing times
-                with Ghana's official passport authority. Requirements can
-                change, and passport issuance is determined by the relevant
-                authority.
+                fees, appointment procedures and processing times with
+                Ghana's official passport authority. Requirements may change.
+                Passport issuance is determined by the relevant authority.
             </div>
-            <h3>Ready to Proceed?</h3>
+
+            <h3>Need Assistance?</h3>
+
             <p>
-                Contact SIKA NE BARIMA LEGAL CHAMBER to discuss the
-                documentation assistance you need for your application.
+                Contact us to discuss your application category and the
+                documentation assistance you need.
             </p>
-            <div class="button-row">
-                <a class="button button-burgundy"
-                   href="https://wa.me/233544086681?text=Hello%2C%20I%20need%20passport%20application%20assistance%20from%20SIKA%20NE%20BARIMA%20LEGAL%20CHAMBER.">
-                    Request Passport Assistance
-                </a>
-                <a class="button button-gold"
-                   href="#passport-prices">
-                    Check Passport Prices
-                </a>
-            </div>
-        </section>
-        <section class="section-card" id="passport-prices">
-            <h2 class="section-title">Passport Price List</h2>
-            <p>
-                Review the available service options and prices below.
-                Contact us to confirm the current price and processing
-                details before payment.
-            </p>
-            <div class="price-grid">
-                <article class="price-card">
-                    <h3>1 Week</h3>
-                    <div class="price">GH₵1,700</div>
-                    <p>Passport assistance option</p>
-                </article>
-                <article class="price-card">
-                    <h3>2–3 Weeks</h3>
-                    <div class="price">GH₵1,300</div>
-                    <p>Passport assistance option</p>
-                </article>
-                <article class="price-card">
-                    <h3>1 Month</h3>
-                    <div class="price">GH₵850</div>
-                    <p>Passport assistance option</p>
-                </article>
-                <article class="price-card">
-                    <h3>Printing Only</h3>
-                    <div class="price">GH₵500</div>
-                    <p>1-week option</p>
-                </article>
-            </div>
-            <div class="notice">
-                <strong>Please note:</strong> These are the prices supplied
-                by SIKA NE BARIMA LEGAL CHAMBER. Confirm what each option
-                includes, the applicable official fees and the current
-                processing time before paying. Processing times are not
-                guaranteed, and passport issuance is handled by the
-                relevant authority.
-            </div>
-            <div class="center">
-                <a class="button button-burgundy"
-                   href="https://wa.me/233544086681?text=Hello%2C%20please%20confirm%20the%20current%20passport%20prices%20and%20processing%20options%20for%20me.">
-                    Ask About Passport Prices
-                </a>
-            </div>
-        </section>
-        <section class="section-card center" id="contact">
-            <h2 class="section-title">Contact SNB</h2>
-            <p>
-                Need help understanding your passport application?
-                Contact us for assistance.
-            </p>
-            <p><strong>Phone:</strong> 0544086681</p>
-            <p><strong>Alternative:</strong> 0508610785</p>
-            <p><strong>Location:</strong> Berekum, Ghana</p>
-            <p><strong>Service:</strong> Nationwide assistance</p>
-            <div class="button-row" style="justify-content:center;">
-                <a class="button button-burgundy"
-                   href="https://wa.me/233544086681?text=Hello%2C%20I%20would%20like%20to%20contact%20SIKA%20NE%20BARIMA%20LEGAL%20CHAMBER.">
-                    Chat on WhatsApp
-                </a>
-                <a class="button button-gold"
-                   href="tel:+233544086681">
-                    Call SNB
-                </a>
-            </div>
+
+            <a class="gold-button"
+               href="https://wa.me/233544086681?text=Hello%2C%20I%20need%20passport%20application%20assistance%20from%20SIKA%20NE%20BARIMA%20LEGAL%20CHAMBER.">
+                Request Passport Assistance
+            </a>
         </section>
     </main>
+
     <footer>
-        <p><strong>SIKA NE BARIMA LEGAL CHAMBER</strong></p>
-        <p>Professional • Reliable • Confidential</p>
-        <p>Berekum, Ghana | Nationwide Service</p>
-        <p>
-            <a href="index.html">Return to Homepage</a>
-        </p>
-        <p>&copy; 2026 SIKA NE BARIMA LEGAL CHAMBER.</p>
+        <p>SIKA NE BARIMA LEGAL CHAMBER</p>
+        <p>Berekum, Ghana | Nationwide Assistance</p>
+        <p><a href="index.html">Return to Homepage</a></p>
     </footer>
 </body>
 </html>
