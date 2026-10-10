@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#500018">
     <meta name="description" content="SIKA NE BARIMA LEGAL CHAMBER offers professional documentation and application assistance in Berekum, Ghana, with nationwide service.">
-
     <title>SIKA NE BARIMA LEGAL CHAMBER</title>
-
     <style>
         :root {
             --wine: #500018;
@@ -18,166 +16,235 @@
             --white: #ffffff;
             --cream: #fbf7f0;
         }
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         html {
             scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            text-rendering: optimizeLegibility;
         }
-
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: var(--cream);
             color: #292029;
             line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* PREMIUM BURGUNDY HEADER */
         header {
-            background: linear-gradient(145deg, #210009, #65001e 55%, #350010);
-            color: white;
+            background:
+                radial-gradient(
+                    ellipse at top,
+                    rgba(212, 175, 55, 0.15),
+                    transparent 55%
+                ),
+                linear-gradient(
+                    145deg,
+                    #190007,
+                    #500018 55%,
+                    #26000b
+                );
+            color: var(--white);
             text-align: center;
-            padding: 42px 20px;
-            border-bottom: 5px solid var(--gold);
-            box-shadow: 0 10px 28px rgba(36, 0, 11, 0.35);
+            padding: 48px 20px 44px;
+            border-bottom: 4px solid var(--gold);
+            box-shadow: 0 12px 30px rgba(36, 0, 11, 0.28);
+            position: relative;
+            overflow: hidden;
         }
-
         .logo {
             display: inline-block;
             color: var(--light-gold);
-            font-size: 48px;
+            font-size: clamp(38px, 5vw, 52px);
             font-weight: 900;
-            letter-spacing: 7px;
-            padding: 8px 24px;
+            letter-spacing: 8px;
+            padding: 10px 26px 10px 34px;
             border: 2px solid var(--gold);
             border-radius: 12px;
-            text-shadow: 0 3px 12px rgba(255, 230, 154, 0.45);
+            background: linear-gradient(
+                145deg,
+                rgba(255, 255, 255, 0.09),
+                rgba(0, 0, 0, 0.2)
+            );
+            text-shadow: 0 3px 12px rgba(255, 230, 154, 0.4);
             box-shadow:
-                inset 0 2px 8px rgba(255,255,255,0.12),
-                0 7px 0 #24000b,
-                0 12px 24px rgba(0,0,0,0.35);
+                inset 0 2px 8px rgba(255, 255, 255, 0.12),
+                0 5px 0 #24000b,
+                0 10px 24px rgba(0, 0, 0, 0.3);
         }
-
         header h1 {
             font-size: clamp(23px, 3vw, 40px);
             line-height: 1.3;
             margin-top: 24px;
-            text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         }
-
         header p {
-            color: #f5e9d0;
-            margin-top: 12px;
+            font-size: clamp(15px, 2vw, 19px);
+            color: var(--white);
+            line-height: 1.8;
+            letter-spacing: 0.6px;
+            opacity: 0.95;
+            max-width: 750px;
+            margin: 12px auto 0;
         }
-
+        /* FULL-WIDTH PHOTO HERO WITH DARK OVERLAY */
         .hero {
+            position: relative;
+            isolation: isolate;
             background:
-                radial-gradient(ellipse at top, #8b153b 0%, transparent 58%),
-                linear-gradient(135deg, #5c001c, #26000b 78%);
-            color: white;
+                linear-gradient(
+                    135deg,
+                    rgba(35, 0, 12, 0.45),
+                    rgba(25, 0, 8, 0.58)
+                ),
+                url("michael-hero.jpg.jpeg") center center / cover no-repeat;
+            color: var(--white);
             text-align: center;
-            padding: 75px 22px;
-            box-shadow: inset 0 -12px 30px rgba(0,0,0,0.22);
+            min-height: 680px;
+            padding: 280px 22px 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: hidden;
+            box-shadow: inset 0 -12px 30px rgba(0, 0, 0, 0.22);
+            border-bottom: 2px solid var(--gold);
         }
-
         .hero h2 {
-            color: var(--light-gold);
-            font-size: clamp(29px, 4vw, 48px);
+            color: var(--white);
+            font-size: clamp(30px, 4vw, 48px);
+            font-weight: 800;
+            letter-spacing: 0.3px;
             line-height: 1.25;
-            margin-bottom: 22px;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.45);
+            max-width: 900px;
+            margin: 0 auto 22px;
+            text-shadow:
+                0 2px 4px rgba(0, 0, 0, 0.75),
+                0 5px 18px rgba(0, 0, 0, 0.45);
         }
-
         .hero p {
+            color: var(--white);
+            font-size: 1.05rem;
             max-width: 760px;
             margin: 0 auto 28px;
-            font-size: 18px;
-            color: #f8edf0;
+            line-height: 1.8;
+            text-shadow:
+                0 2px 6px rgba(0, 0, 0, 0.9);
         }
-
+        /* GOLD 3D BUTTONS */
         .button {
             display: inline-block;
-            background: linear-gradient(145deg, #fff0b5, #d4af37 58%, #a77a13);
+            position: relative;
+            top: 0;
+            background: linear-gradient(
+                145deg,
+                #fff4c4 0%,
+                #e5c158 35%,
+                #d4af37 65%,
+                #9c7014 100%
+            );
             color: #390010;
-            padding: 13px 23px;
             border: 1px solid #fff0b5;
-            border-radius: 9px;
-            text-decoration: none;
+            border-radius: 10px;
+            padding: 14px 25px;
+            margin: 12px 8px;
             font-weight: 800;
-            margin: 8px;
+            text-decoration: none;
+            text-align: center;
             box-shadow:
                 0 5px 0 #805c0d,
-                0 10px 20px rgba(0,0,0,0.28);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+                0 10px 22px rgba(0, 0, 0, 0.38),
+                inset 0 1px 2px rgba(255, 255, 255, 0.8);
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
         }
-
         .button:hover {
-            transform: translateY(-4px);
+            transform: translateY(-3px);
             box-shadow:
-                0 9px 0 #805c0d,
-                0 15px 25px rgba(0,0,0,0.3);
+                0 8px 0 #805c0d,
+                0 14px 24px rgba(0, 0, 0, 0.5),
+                inset 0 1px 2px rgba(255, 255, 255, 0.9);
         }
-
+        .button:active {
+            transform: translateY(2px);
+            box-shadow:
+                0 2px 0 #805c0d,
+                0 5px 12px rgba(0, 0, 0, 0.3);
+        }
+        /* SERVICES SECTION */
         .services {
             max-width: 1500px;
             margin: auto;
             padding: 65px 24px;
         }
-
         .services h2 {
             text-align: center;
             color: var(--wine);
             font-size: clamp(29px, 3vw, 40px);
             margin-bottom: 8px;
         }
-
         .intro {
             text-align: center;
             margin-bottom: 38px;
             color: #5c4650;
         }
-
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
             gap: 28px;
         }
-
+        /* PREMIUM 3D SERVICE CARDS */
         .service-card {
-            background: linear-gradient(145deg, #ffffff, #f2e8e9);
+            background: linear-gradient(
+                145deg,
+                #ffffff,
+                #f5edef
+            );
             padding: 30px 23px;
-            border: 1px solid rgba(212,175,55,0.8);
+            border: 1px solid rgba(212, 175, 55, 0.85);
             border-top: 5px solid var(--gold);
             border-radius: 16px;
             text-align: center;
             box-shadow:
-                0 8px 0 #dfd0d2,
-                0 14px 28px rgba(67,0,22,0.12),
-                inset 0 1px 0 white;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+                0 7px 0 #d9c6ca,
+                0 16px 32px rgba(67, 0, 22, 0.16),
+                inset 0 1px 0 rgba(255, 255, 255, 0.95);
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
         }
-
         .service-card:hover {
             transform: translateY(-7px);
+            border-color: var(--gold);
             box-shadow:
-                0 12px 0 #c8b6b9,
-                0 22px 35px rgba(67,0,22,0.2);
+                0 10px 0 #c8b6b9,
+                0 26px 42px rgba(67, 0, 22, 0.24),
+                0 0 18px rgba(212, 175, 55, 0.16);
         }
-
         .service-card h3 {
             color: var(--wine);
             font-size: 22px;
+            font-weight: 700;
             line-height: 1.35;
             margin-bottom: 13px;
+            letter-spacing: 0.3px;
         }
-
         .service-card p {
-            margin-bottom: 21px;
+            margin-bottom: 16px;
         }
-
         .service-card a {
             display: inline-block;
             color: var(--wine);
@@ -186,43 +253,50 @@
             border-bottom: 2px solid var(--gold);
             padding-bottom: 4px;
         }
-
         .service-card a:hover {
             color: #a00037;
         }
-
+        /* WHY CHOOSE SNB */
         .features {
-            background: linear-gradient(135deg, #eee0e3, #fffaf1);
+            background: linear-gradient(
+                135deg,
+                #eee0e3,
+                #fffaf1
+            );
             padding: 48px 20px;
             text-align: center;
             border-top: 1px solid #e0c98b;
             border-bottom: 1px solid #e0c98b;
         }
-
         .features h2 {
             color: var(--wine);
             font-size: 30px;
             margin-bottom: 12px;
         }
-
+        .features p {
+            margin: 8px 0;
+        }
+        /* CONTACT SECTION */
         .contact {
-            background: linear-gradient(145deg, #65001e, #26000b);
-            color: white;
+            background: linear-gradient(
+                145deg,
+                #65001e,
+                #26000b
+            );
+            color: var(--white);
             text-align: center;
             padding: 55px 20px;
-            box-shadow: inset 0 8px 25px rgba(0,0,0,0.2);
+            box-shadow: inset 0 8px 25px rgba(0, 0, 0, 0.2);
         }
-
         .contact h2 {
             color: var(--light-gold);
             font-size: 30px;
             margin-bottom: 12px;
         }
-
         .contact p {
             margin: 9px 0;
         }
-
+        /* FOOTER */
         footer {
             background: #190007;
             color: #f4e8d0;
@@ -231,47 +305,73 @@
             font-size: 14px;
             border-top: 3px solid var(--gold);
         }
-
-        @media (min-width: 1800px) {
+        /* LARGE SCREENS */
+        @media (min-width: 1600px) {
             body {
                 font-size: 19px;
             }
-
             .services {
                 max-width: 1700px;
             }
-
             .service-grid {
                 gap: 35px;
             }
+            .hero h2 {
+                font-size: clamp(38px, 3vw, 58px);
+            }
+            .hero p {
+                max-width: 900px;
+            }
         }
-
+        /* MOBILE PHONES AND SMALL SCREENS */
         @media (max-width: 600px) {
             header {
                 padding: 32px 15px;
             }
-
             .logo {
                 font-size: 39px;
+                letter-spacing: 6px;
             }
-
+            header h1 {
+                font-size: 25px;
+            }
             .hero {
-                padding: 50px 17px;
+                min-height: 620px;
+                padding: 220px 17px 55px;
+                background-position: center center;
             }
-
+            .hero h2 {
+                font-size: 30px;
+                line-height: 1.3;
+            }
             .hero p {
                 font-size: 16px;
+                line-height: 1.7;
             }
-
+            .hero .button {
+                width: min(100%, 300px);
+                margin: 10px auto;
+                padding: 14px 18px;
+            }
             .services {
                 padding: 45px 16px;
             }
-
             .service-grid {
                 grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .service-card {
+                padding: 27px 20px;
+            }
+            .features h2,
+            .contact h2 {
+                font-size: 27px;
+            }
+            .contact .button {
+                max-width: 100%;
             }
         }
-
+        /* REDUCE ANIMATION WHEN REQUESTED BY THE DEVICE */
         @media (prefers-reduced-motion: reduce) {
             *,
             *::before,
@@ -282,147 +382,195 @@
         }
     </style>
 </head>
-
 <body>
-
     <header>
         <div class="logo">SNB</div>
         <h1>SIKA NE BARIMA LEGAL CHAMBER</h1>
-        <p>Professional Documentation &amp; Application Assistance</p>
+        <p>
+            Professional Documentation &amp; Application Assistance
+        </p>
     </header>
-
     <main>
+        <!-- HOMEPAGE HERO -->
         <section class="hero">
-            <h2>Your Documents. Our Professional Assistance.</h2>
+            <h2 class="hero-title">
+    Your Documents.
+    <span>Our Expertise. Your Peace of Mind.</span>
+</h2>
             <p>
                 Get assistance with document preparation, applications
                 and navigating official processes. Based in Berekum, Ghana,
                 serving clients nationwide.
             </p>
-            <a class="button" href="https://wa.me/233544086681">
+            <a
+                class="button"
+                href="https://wa.me/233544086681"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 Contact Us on WhatsApp
             </a>
             <a class="button" href="#services">
                 Explore Our Services
             </a>
         </section>
-
+        <!-- OUR SERVICES -->
         <section class="services" id="services">
             <h2>Our Services</h2>
             <p class="intro">
                 Select a service below to learn more and make an enquiry.
             </p>
-
             <div class="service-grid">
-
                 <article class="service-card">
                     <h3>Passport Assistance</h3>
-                    <p>Guidance with passport applications and related documentation.</p>
-                    <a href="passport.html">Explore Service →</a>
+                    <p>
+                        Guidance with passport applications and
+                        related documentation.
+                    </p>
+                    <a href="passport.html">
+                        Explore Service →
+                    </a>
                 </article>
-
                 <article class="service-card">
-    <h3>Birth Certificate</h3>
-    <p>Assistance with birth certificate applications and documentation.</p>
-    <a href="birth%20certificate.html">Explore Service →</a>
-</article>
-
+                    <h3>Birth Certificate</h3>
+                    <p>
+                        Assistance with birth certificate applications
+                        and documentation.
+                    </p>
+                    <a href="birth%20certificate.html">
+                        Explore Service →
+                    </a>
+                </article>
                 <article class="service-card">
                     <h3>Affidavit</h3>
-                    <p>Assistance with affidavit preparation and related documentation.</p>
-                    <a href="affidavit.html">Explore Service →</a>
+                    <p>
+                        Assistance with affidavit preparation and
+                        related documentation.
+                    </p>
+                    <a href="affidavit.html">
+                        Explore Service →
+                    </a>
                 </article>
-
                 <article class="service-card">
                     <h3>Gazette</h3>
-                    <p>Guidance on gazette applications and supporting documents.</p>
-                    <a href="gazette.html">Explore Service →</a>
+                    <p>
+                        Guidance on gazette applications and
+                        supporting documents.
+                    </p>
+                    <a href="gazette.html">
+                        Explore Service →
+                    </a>
                 </article>
-
                 <article class="service-card">
                     <h3>Business Certificate</h3>
-                    <p>Assistance with business registration documentation.</p>
-                    <a href="business-certificate.html">Explore Service →</a>
+                    <p>
+                        Assistance with business registration
+                        documentation.
+                    </p>
+                    <a href="business-certificate.html">
+                        Explore Service →
+                    </a>
                 </article>
-
                 <article class="service-card">
                     <h3>Commissioner for Oaths</h3>
-                    <p>Information and assistance relating to oath and affidavit services.</p>
-                    <a href="commissioner-for-oaths.html">Explore Service →</a>
+                    <p>
+                        Information and assistance relating to oath
+                        and affidavit services.
+                    </p>
+                    <a href="commissioner-for-oaths.html">
+                        Explore Service →
+                    </a>
                 </article>
-
             </div>
         </section>
-<section class="services" id="prices">
-        <h2>Our Price List</h2>
-        <p class="intro">
-            Transparent pricing for SIKA NE BARIMA LEGAL CHAMBER.
-            Contact us to confirm requirements before payment.
-        </p>
-
-        <div class="service-grid">
-
-            <article class="service-card">
-                <h3>Passport Applications</h3>
-                <p>1 week — GH₵1,700</p>
-                <p>2–3 weeks — GH₵1,300</p>
-                <p>1 month — GH₵850</p>
-                <p>Printing only, 1 week — GH₵500</p>
-                <a href="passport.html">View Passport Service →</a>
-            </article>
-
-            <article class="service-card">
-                <h3>Birth Certificate</h3>
-                <p>1 week — GH₵700</p>
-                <p>1 month — GH₵550</p>
-                <a href="birth-certificate.html">View Service →</a>
-            </article>
-
-            <article class="service-card">
-                <h3>Affidavit</h3>
-                <p>Name/date of birth — GH₵200</p>
-                <p>School sponsorship — GH₵300</p>
-                <p>Outside Ghana — GH₵400</p>
-                <a href="affidavit.html">View Affidavit Service →</a>
-            </article>
-
-            <article class="service-card">
-                <h3>Business Certificate</h3>
-                <p>1 month, with TIN — GH₵550</p>
-                <p>1 month, without TIN — GH₵600</p>
-                <p>1 week, with TIN — GH₵900</p>
-                <p>1 week, without TIN — GH₵950</p>
-                <p>2 months — GH₵350</p>
-                <a href="business-certificate.html">View Service →</a>
-            </article>
-
-        </div>
-
-        <p class="intro">
-            Processing times and prices may depend on documentation
-            and official requirements. Please confirm before payment.
-        </p>
-    </section>
+        <!-- PRICE LIST -->
+        <section class="services" id="prices">
+            <h2>Our Price List</h2>
+            <p class="intro">
+                Transparent pricing for SIKA NE BARIMA LEGAL CHAMBER.
+                Contact us to confirm requirements before payment.
+            </p>
+            <div class="service-grid">
+                <article class="service-card">
+                    <h3>Passport Applications</h3>
+                    <p>1 week — GH₵1,700</p>
+                    <p>2–3 weeks — GH₵1,300</p>
+                    <p>1 month — GH₵850</p>
+                    <p>Printing only, 1 week — GH₵500</p>
+                    <a href="passport.html">
+                        View Passport Service →
+                    </a>
+                </article>
+                <article class="service-card">
+                    <h3>Birth Certificate</h3>
+                    <p>1 week — GH₵700</p>
+                    <p>1 month — GH₵550</p>
+                    <a href="birth%20certificate.html">
+                        View Service →
+                    </a>
+                </article>
+                <article class="service-card">
+                    <h3>Affidavit</h3>
+                    <p>Name/date of birth — GH₵200</p>
+                    <p>School sponsorship — GH₵300</p>
+                    <p>Outside Ghana — GH₵400</p>
+                    <a href="affidavit.html">
+                        View Affidavit Service →
+                    </a>
+                </article>
+                <article class="service-card">
+                    <h3>Business Certificate</h3>
+                    <p>1 month, with TIN — GH₵550</p>
+                    <p>1 month, without TIN — GH₵600</p>
+                    <p>1 week, with TIN — GH₵900</p>
+                    <p>1 week, without TIN — GH₵950</p>
+                    <p>2 months — GH₵350</p>
+                    <a href="business-certificate.html">
+                        View Service →
+                    </a>
+                </article>
+            </div>
+            <p class="intro" style="margin-top: 35px;">
+                Processing times and prices may depend on documentation
+                and official requirements. Please confirm before payment.
+            </p>
+        </section>
+        <!-- WHY CHOOSE SNB -->
         <section class="features">
             <h2>Why Choose SNB?</h2>
             <p>Professional • Reliable • Confidential</p>
             <p>Berekum, Ghana | Nationwide Assistance</p>
         </section>
-
-        <section class="contact" id="contact">
-            <h2>Contact SIKA NE BARIMA</h2>
-            <p>Have a question about our services? Get in touch.</p>
-            <p>Phone / WhatsApp: +233 54 408 6681</p>
-            <a class="button" href="https://wa.me/233544086681">
-                Chat with Us
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <h2>Contact SIKA NE BARIMA</h2>
+    <p>Have a question about our services? Get in touch.</p>
+    <p>Phone: +233 54 408 6681</p>
+    <!-- CALL BUTTON -->
+    <a class="button" href="tel:+233544086681">
+        📞 Call Us
+    </a>
+    <!-- WHATSAPP BUTTON -->
+    <a
+        class="button"
+        href="https://wa.me/233544086681?text=Hello%20SIKA%20NE%20BARIMA%20LEGAL%20CHAMBER%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        WhatsApp Chat With Us
             </a>
         </section>
     </main>
-
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 SIKA NE BARIMA LEGAL CHAMBER. All rights reserved.</p>
-        <p>Official documents and approvals are issued by the relevant authorities.</p>
+        <p>
+            &copy; 2026 SIKA NE BARIMA LEGAL CHAMBER.
+            All rights reserved.
+        </p>
+        <p>
+            Official documents and approvals are issued by the
+            relevant authorities.
+        </p>
     </footer>
-
 </body>
 </html>

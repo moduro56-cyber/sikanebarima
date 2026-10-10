@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#500018">
+    <meta name="description" content="SIKA NE BARIMA LEGAL CHAMBER offers professional documentation and application assistance in Berekum, Ghana, with nationwide service.">
+
+    <title>SIKA NE BARIMA LEGAL CHAMBER</title>
+
+    <style>
+        :root {
+            --wine: #500018;
+            --deep-wine: #24000b;
+            --rich-wine: #790026;
+            --gold: #d4af37;
+            --light-gold: #ffe69a;
+            --white: #ffffff;
+            --cream: #fbf7f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--cream);
+            color: #292029;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(145deg, #210009, #65001e 55%, #350010);
+            color: white;
+            text-align: center;
+            padding: 42px 20px;
+            border-bottom: 5px solid var(--gold);
+            box-shadow: 0 10px 28px rgba(36, 0, 11, 0.35);
+        }
+
+        .logo {
+            display: inline-block;
+            color: var(--light-gold);
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            padding: 8px 24px;
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            text-shadow: 0 3px 12px rgba(255, 230, 154, 0.45);
+            box-shadow:
+                inset 0 2px 8px rgba(255,255,255,0.12),
+                0 7px 0 #24000b,
+                0 12px 24px rgba(0,0,0,0.35);
+        }
+
+        header h1 {
+            font-size: clamp(23px, 3vw, 40px);
+            line-height: 1.3;
+            margin-top: 24px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        header p {
+            color: #f5e9d0;
+            margin-top: 12px;
+        }
+
+        .hero {
+            background:
+                radial-gradient(ellipse at top, #8b153b 0%, transparent 58%),
+                linear-gradient(135deg, #5c001c, #26000b 78%);
+            color: white;
+            text-align: center;
+            padding: 75px 22px;
+            box-shadow: inset 0 -12px 30px rgba(0,0,0,0.22);
+        }
+
+        .hero h2 {
+            color: var(--light-gold);
+            font-size: clamp(29px, 4vw, 48px);
+            line-height: 1.25;
+            margin-bottom: 22px;
+            text-shadow: 0 5px 15px rgba(0,0,0,0.45);
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: 0 auto 28px;
+            font-size: 18px;
+            color: #f8edf0;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(145deg, #fff0b5, #d4af37 58%, #a77a13);
+            color: #390010;
+            padding: 13px 23px;
+            border: 1px solid #fff0b5;
+            border-radius: 9px;
+            text-decoration: none;
+            font-weight: 800;
+            margin: 8px;
+            box-shadow:
+                0 5px 0 #805c0d,
+                0 10px 20px rgba(0,0,0,0.28);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            box-shadow:
+                0 9px 0 #805c0d,
+                0 15px 25px rgba(0,0,0,0.3);
+        }
+
+        .services {
+            max-width: 1500px;
+            margin: auto;
+            padding: 65px 24px;
+        }
+
+        .services h2 {
+            text-align: center;
+            color: var(--wine);
+            font-size: clamp(29px, 3vw, 40px);
+            margin-bottom: 8px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 38px;
+            color: #5c4650;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 28px;
+        }
+
+        .service-card {
+            background: linear-gradient(145deg, #ffffff, #f2e8e9);
+            padding: 30px 23px;
+            border: 1px solid rgba(212,175,55,0.8);
+            border-top: 5px solid var(--gold);
+            border-radius: 16px;
+            text-align: center;
+            box-shadow:
+                0 8px 0 #dfd0d2,
+                0 14px 28px rgba(67,0,22,0.12),
+                inset 0 1px 0 white;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow:
+                0 12px 0 #c8b6b9,
+                0 22px 35px rgba(67,0,22,0.2);
+        }
+
+        .service-card h3 {
+            color: var(--wine);
+            font-size: 22px;
+            line-height: 1.35;
+            margin-bottom: 13px;
+        }
+
+        .service-card p {
+            margin-bottom: 21px;
+        }
+
+        .service-card a {
+            display: inline-block;
+            color: var(--wine);
+            font-weight: 800;
+            text-decoration: none;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 4px;
+        }
+
+        .service-card a:hover {
+            color: #a00037;
+        }
+
+        .features {
+            background: linear-gradient(135deg, #eee0e3, #fffaf1);
+            padding: 48px 20px;
+            text-align: center;
+            border-top: 1px solid #e0c98b;
+            border-bottom: 1px solid #e0c98b;
+        }
+
+        .features h2 {
+            color: var(--wine);
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .contact {
+            background: linear-gradient(145deg, #65001e, #26000b);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+            box-shadow: inset 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .contact h2 {
+            color: var(--light-gold);
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .contact p {
+            margin: 9px 0;
+        }
+
+        footer {
+            background: #190007;
+            color: #f4e8d0;
+            text-align: center;
+            padding: 24px 15px;
+            font-size: 14px;
+            border-top: 3px solid var(--gold);
+        }
+
+        @media (min-width: 1800px) {
+            body {
+                font-size: 19px;
+            }
+
+            .services {
+                max-width: 1700px;
+            }
+
+            .service-grid {
+                gap: 35px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 32px 15px;
+            }
+
+            .logo {
+                font-size: 39px;
+            }
+
+            .hero {
+                padding: 50px 17px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .services {
+                padding: 45px 16px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SNB</div>
+        <h1>SIKA NE BARIMA LEGAL CHAMBER</h1>
+        <p>Professional Documentation &amp; Application Assistance</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Documents. Our Professional Assistance.</h2>
+            <p>
+                Get assistance with document preparation, applications
+                and navigating official processes. Based in Berekum, Ghana,
+                serving clients nationwide.
+            </p>
+            <a class="button" href="https://wa.me/233544086681">
+                Contact Us on WhatsApp
+            </a>
+            <a class="button" href="#services">
+                Explore Our Services
+            </a>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <p class="intro">
+                Select a service below to learn more and make an enquiry.
+            </p>
+
+            <div class="service-grid">
+
+                <article class="service-card">
+                    <h3>Passport Assistance</h3>
+                    <p>Guidance with passport applications and related documentation.</p>
+                    <a href="passport.html">Explore Service →</a>
+                </article>
+
+                <article class="service-card">
+    <h3>Birth Certificate</h3>
+    <p>Assistance with birth certificate applications and documentation.</p>
+    <a href="birth%20certificate.html">Explore Service →</a>
+</article>
+
+                <article class="service-card">
+                    <h3>Affidavit</h3>
+                    <p>Assistance with affidavit preparation and related documentation.</p>
+                    <a href="affidavit.html">Explore Service →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Gazette</h3>
+                    <p>Guidance on gazette applications and supporting documents.</p>
+                    <a href="gazette.html">Explore Service →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Business Certificate</h3>
+                    <p>Assistance with business registration documentation.</p>
+                    <a href="business-certificate.html">Explore Service →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Commissioner for Oaths</h3>
+                    <p>Information and assistance relating to oath and affidavit services.</p>
+                    <a href="commissioner-for-oaths.html">Explore Service →</a>
+                </article>
+
+            </div>
+        </section>
+<section class="services" id="prices">
+        <h2>Our Price List</h2>
+        <p class="intro">
+            Transparent pricing for SIKA NE BARIMA LEGAL CHAMBER.
+            Contact us to confirm requirements before payment.
+        </p>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+                <h3>Passport Applications</h3>
+                <p>1 week — GH₵1,700</p>
+                <p>2–3 weeks — GH₵1,300</p>
+                <p>1 month — GH₵850</p>
+                <p>Printing only, 1 week — GH₵500</p>
+                <a href="passport.html">View Passport Service →</a>
+            </article>
+
+            <article class="service-card">
+                <h3>Birth Certificate</h3>
+                <p>1 week — GH₵700</p>
+                <p>1 month — GH₵550</p>
+               <a href="birth%20certificate.html">View Service →</a>
+            </article>
+
+            <article class="service-card">
+                <h3>Affidavit</h3>
+                <p>Name/date of birth — GH₵200</p>
+                <p>School sponsorship — GH₵300</p>
+                <p>Outside Ghana — GH₵400</p>
+                <a href="affidavit.html">View Affidavit Service →</a>
+            </article>
+
+            <article class="service-card">
+                <h3>Business Certificate</h3>
+                <p>1 month, with TIN — GH₵550</p>
+                <p>1 month, without TIN — GH₵600</p>
+                <p>1 week, with TIN — GH₵900</p>
+                <p>1 week, without TIN — GH₵950</p>
+                <p>2 months — GH₵350</p>
+                <a href="business-certificate.html">View Service →</a>
+            </article>
+
+        </div>
+
+        <p class="intro">
+            Processing times and prices may depend on documentation
+            and official requirements. Please confirm before payment.
+        </p>
+    </section>
+        <section class="features">
+            <h2>Why Choose SNB?</h2>
+            <p>Professional • Reliable • Confidential</p>
+            <p>Berekum, Ghana | Nationwide Assistance</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact SIKA NE BARIMA</h2>
+            <p>Have a question about our services? Get in touch.</p>
+            <p>Phone / WhatsApp: +233 54 408 6681</p>
+            <a class="button" href="https://wa.me/233544086681">
+                Chat with Us
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SIKA NE BARIMA LEGAL CHAMBER. All rights reserved.</p>
+        <p>Official documents and approvals are issued by the relevant authorities.</p>
+    </footer>
+
+</body>
+</html>
